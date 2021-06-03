@@ -1,0 +1,60 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int num,sum,d;
+	clrscr();
+	printf("Enter a number ");
+	scanf("%d",&num);
+	sum=0;
+	while(num>0){
+	d=num%10;
+	sum+=d;
+	num/=10;
+	}
+printf("\nThe sum of digits of the number is %d",sum);
+getch();
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int num,i,n;
+	clrscr();
+	printf("Enter a number between 1 and 100\n");
+	scanf("%d",&num);
+	if(num>0)
+	{
+	printf("The multiples of %d from 1 to 100 is\n",num);
+	for(i=1;i<=100;i++){
+	n=num*i;
+	if(n>0&&n<=100)
+	printf("%d\t",n);
+	}
+	}
+    else
+    printf("\n0 does not have any multiples");
+    getch();
+}
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int m,n,i;
+	clrscr();
+	printf("Enter two numbers ");
+	scanf("%d%d",&m,&n);
+	if(m>n)
+	printf("\nError in input");
+	if(m%2==0)
+	i=m+2;
+	else
+	i=m+1;
+	printf("The even numbers between %d and %d are\n",m,n);
+	for(;i<n;i+=2)
+	printf("%d\t",i);
+	getch();
+}
+
